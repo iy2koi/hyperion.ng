@@ -1,0 +1,49 @@
+{
+	"type":"object",
+	"required":true,
+	"properties":{
+		"output": {
+			"type": "string",
+			"title":"edt_dev_spec_multicastGroup_title",
+			"default" : "239.15.18.2",
+			"propertyOrder" : 1
+		},
+		"orbIds": {
+			"type": "string",
+			"title":"edt_dev_spec_orbIds_title",
+			"default": "1",
+			"propertyOrder" : 2
+		},
+		"numLeds": {
+			"type": "integer",
+			"title":"edt_dev_spec_numberOfLeds_title",
+			"default": 24,
+			"propertyOrder" : 3
+		},
+		"port": {
+			"type": "integer",
+			"title":"edt_dev_spec_port_title",
+			"minimum" : 0,
+			"maximum" : 65535,
+			"default": 49.692,
+			"propertyOrder" : 4
+		},
+		"useOrbSmoothing": {
+			"type": "boolean",
+			"title":"edt_dev_spec_useOrbSmoothing_title",
+			"default": true,
+			"propertyOrder" : 5
+		},
+		"latchTime": {
+			"type": "integer",
+			"title":"edt_dev_spec_latchtime_title",
+			"default": 1,
+			"append" : "edt_append_ms",
+			"minimum": 1,
+			"maximum": 1000,
+			"access" : "expert",
+			"propertyOrder" : 6
+		}
+	},
+	"additionalProperties": true
+}

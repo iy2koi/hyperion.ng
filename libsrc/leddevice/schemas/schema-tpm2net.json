@@ -1,0 +1,44 @@
+{
+	"type":"object",
+	"required":true,
+	"properties":{
+		"host" : {
+			"type": "string",
+			"title":"edt_dev_spec_targetIpHost_title",
+			"propertyOrder" : 1
+		},
+		"port": {
+			"type": "integer",
+			"title":"edt_dev_spec_port_title",
+			"minimum" : 0,
+			"maximum" : 65535,
+			"default" : 50200,
+			"propertyOrder" : 2
+		},
+		"latchtime": {
+			"type": "integer",
+			"title":"edt_dev_spec_latchtime_title",
+			"default": 104000,
+			"append" : "edt_append_s",
+			"propertyOrder" : 3
+		},
+		"max-packet": {
+			"type": "integer",
+			"title":"edt_dev_spec_maxPacket_title",
+			"minimum" : 0,
+			"default" : 170,
+			"propertyOrder" : 4
+		},
+		"latchTime": {
+			"type": "integer",
+			"title":"edt_dev_spec_latchtime_title",
+			"default": 1,
+			"append" : "edt_append_ms",
+			"minimum": 1,
+			"maximum": 1000,
+			"access" : "expert",
+			"propertyOrder" : 5
+		}
+	},
+	"additionalProperties": true
+}
